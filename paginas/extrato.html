@@ -1,0 +1,48 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+    <!--<link rel="stylesheet" ” href: " {% static ' static/css/style.css ' %} ">-->
+</head>
+
+<body>
+    <a href="/paginas/paginainicial.html">
+        <!--{% url 'pagina_inicial' %}-->
+        <img class="botaovoltar" src="/img/voltar.svg " alt="ilustraçao cofrinho com moedas " />
+    </a>
+
+    <div class="titulo">
+        <h1>
+            <!--{{request.user.first_name}}-->
+        </h1>
+        <h2>Extrato</h2>
+
+    </div>
+
+    <div>
+        <!--{% if lista_mov %}-->
+        <ul>
+            <!--{% for movimentacao in lista_mov %}-->
+            <div class="movimentacaoextrato">
+                <li>R$ 15,00 lanche na cantina
+                    <!--{{ movimentacao.tipo_movimentacao }} | {{ movimentacao.valor }} | {{ movimentacao.descricao }} | {{ movimentacao.data }}-->
+                </li>
+            </div>
+            <!--{% endfor %}-->
+        </ul>
+        <!--{% else %}-->
+        <p class="avisomovimentacao">Parece que você ainda não registou nenhuma movimentação</p>
+        <!--{% endif %}-->
+    </div>
+</body>
+
+</html>

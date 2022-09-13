@@ -1,0 +1,68 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--{% load staticfiles %}-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" ” href: " {% static ' static/css/style.css ' %} ">-->
+</head>
+
+<body>
+
+
+
+    <div id="logintitulo" class="titulo">
+        <h1>Olá,
+            <!--{{request.user.first_name}}-->Maya
+        </h1>
+
+        <h4>Saldo:</h4>
+        <h2>R$ 100,00</h2>
+    </div>
+
+    <div class=" imgtitulo ">
+        <img src="/img/avatar.svg " alt="ilustraçao cofrinho com moedas " />
+    </div>
+
+
+
+    <a href="/paginas/index.html ">
+        <div class=" box ">
+            <h3>Adicionar<br> Movimentação</h3>
+            <img class="imagembox " src="/img/dinheiromovimentacao.svg " alt="ilustraçao cofrinho com moedas " />
+        </div>
+    </a>
+
+    <a href="/paginas/poupancas.html ">
+        <div class="box ">
+            <h3>Minhas<br> Poupanças</h3>
+            <img class="imagembox " src="/img/minhaspoupancas.svg " alt="ilustraçao cofrinho com moedas " />
+        </div>
+    </a>
+
+    <a href="/paginas/extrato.html ">
+        <div class="box ">
+            <h3>Extrato</h3>
+            <img class="imagembox " src="/img/extrato.svg " alt="ilustraçao cofrinho com moedas " />
+        </div>
+    </a>
+
+    <a href="/ ">
+
+        <div class="box " style="border-color: #7066fc; ">
+            <h3>Dicas<br> financeiras</h3>
+            <img class="imagembox " src="/img/dicasfinanceiras.svg " alt="ilustraçao cofrinho com moedas " />
+        </div>
+    </a>
+    <!--{% if request.user.is_authenticated %}-->
+    <div class="logout "> <a class="logout " href=" /logout/ ">Deslogar da conta</a></div>
+    <!--{% endif %}-->
+
+</body>
+
+</html
